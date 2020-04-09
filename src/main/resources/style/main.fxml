@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="141.0" prefWidth="620.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.demkom58.nmlab4.MainController">
+   <children>
+      <Button layoutX="4.0" layoutY="12.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#euler" prefHeight="26.0" prefWidth="290.0" text="Метод Ейлера" />
+      <Button layoutX="4.0" layoutY="40.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#rungeKutta" prefHeight="26.0" prefWidth="290.0" text="Метод Рунге - Кутта" />
+      <Button layoutX="4.0" layoutY="68.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#adams" prefHeight="26.0" prefWidth="290.0" text="Метод Адамса" />
+      <TextField fx:id="functionInput" layoutX="61.0" layoutY="110.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyTyped="#onChanged" prefHeight="25.0" prefWidth="555.0" promptText="Приклад: f(x,y) = y + 4 * x + 5" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="1.0" layoutY="110.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="57.0" text="Функція" />
+      <Separator layoutX="298.0" layoutY="-1.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="106.0" prefWidth="1.0" />
+      <TextField fx:id="fromAInput" layoutX="360.0" layoutY="40.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyTyped="#onChanged" prefHeight="25.0" prefWidth="100.0" promptText="0" />
+      <TextField fx:id="toBInput" layoutX="502.0" layoutY="39.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyTyped="#onChanged" prefHeight="25.0" prefWidth="107.0" promptText="1" />
+      <Separator layoutX="301.0" layoutY="33.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="5.0" prefWidth="319.0" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="308.0" layoutY="40.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="57.0" text="Від a =" />
+      <Separator layoutX="-7.0" layoutY="103.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="6.0" prefWidth="628.0" />
+      <TextField fx:id="stepsInput" layoutX="360.0" layoutY="4.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyTyped="#onChanged" prefHeight="25.0" prefWidth="250.0" promptText="20" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="308.0" layoutY="4.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="57.0" text="Кроків" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="459.0" layoutY="40.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="44.0" text="до b =" />
+      <Separator layoutX="1.0" layoutY="135.0" prefHeight="6.0" prefWidth="620.0" />
+      <Separator layoutX="301.0" layoutY="68.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="5.0" prefWidth="319.0" />
+      <TextField layoutX="359.0" layoutY="76.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyTyped="#onChanged" prefHeight="25.0" prefWidth="100.0" promptText="0" fx:id="x0Input" />
+      <TextField fx:id="y0Input" layoutX="501.0" layoutY="75.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyTyped="#onChanged" prefHeight="25.0" prefWidth="107.0" promptText="1" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="326.0" layoutY="76.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="32.0" text="x0 =" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="459.0" layoutY="76.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="57.0" text="y0 = " />
+   </children>
+</AnchorPane>
