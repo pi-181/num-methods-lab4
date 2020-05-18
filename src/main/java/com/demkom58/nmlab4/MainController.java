@@ -43,6 +43,9 @@ public class MainController extends GuiController {
         read();
     }
 
+    /**
+     * Метод Эйлера-Коши
+     */
     @FXML
     public void euler(MouseEvent event) {
         try {
